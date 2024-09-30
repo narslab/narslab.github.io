@@ -76,6 +76,9 @@ readmes:
   - narslab/bus-transit-energy
   - narslab/tracking-msa-ghg
   - narslab/project-groundwork
+  - narslab/enhanced-trip-chaining
+  - narslab/spatial-crash-typology
+  - narslab/transit-electrification-futures
 
 projects:
   - narslab/tree-risk-ai
