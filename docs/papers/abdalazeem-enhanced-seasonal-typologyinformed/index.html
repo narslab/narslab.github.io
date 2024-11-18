@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Enhanced Seasonal Typology-Informed Transit Trip Chaining via Mobile Boarding and Survey Data</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="NARS Lab" href="https://narslab.org/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg">
+					N A R S Lab
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">Blog</a>
+						</li>
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href="/papers/">Papers</a>
+						</li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">Projects</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/dashboards/">Dashboards</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/courses/">Courses</a></li>	
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/team/">Team</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	<div class="row">
+	<div class="col-lg-12">
+		
+		<div class="titlebox">
+			<div class="title">
+				Enhanced Seasonal Typology-Informed Transit Trip Chaining via Mobile Boarding and Survey Data
+			</div>
+			<p>
+			<div class="smallhead">
+				Abdalazeem, Mohammed, Oke, Jimi
+				2024.
+				Data Science for Transportation 6(3):NA.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			
+			
+			
+			<div class="smallhead">
+				DOI
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="https://doi.org/10.1007/s42421-024-00108-y">10.1007/s42421-024-00108-y</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<h1 id="abstract">Abstract</h1>
+<p>Trip chaining is essential in estimating transit demand models based on big data sources, which hold advantages over traditional data collection methods in terms of both accuracy and cost-effectiveness. However, regional transit systems, accounting for 60% of transit systems in the United States, are often not equipped with smart card systems that are typically needed for trip chaining due to the high costs involved. This study introduces an innovative trip chaining framework that leverages boarding-only mobile ticketing automated fare collection (AFC) data. Our approach incorporates spatiotemporal passenger types obtained via typology analysis. This is followed by calibrating type-specific and season-aware parameters using survey data supplied by the network operators. We then trained a gradient boosting machine to learn the error structure of the initial trip chaining flow estimates and augment final trip frequency predictions. Our findings demonstrate that incorporating spatial error correction significantly improves the trip chaining results. However, the best performance is achieved when season-awareness and typology information are integrated with spatial error correction, reducing the mean absolute error (MAE) by approximately 70% and the symmetric mean absolute percentage error (SMAPE) by 85%. Furthermore, the typology, which we validate with a classification model, provides a deeper understanding of passenger travel characteristics which can facilitate further planning efforts. The spatial error correction model also provides insights into portions of the network that can be better targeted for survey data collection and mobile ticketing adoption to improve future models. Overall, this research will enable regional transit planners to efficiently utilize limited resources and generate valuable insights that would otherwise remain inaccessible.</p>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>
