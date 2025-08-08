@@ -4,8 +4,8 @@ title: "Resilience in multilayer transportation infrastructure networks: a revie
 authors: Arabi, Mahsa, Gerasimidis, Simos, Barchers, Camille, Oke, Jimi
 year: 2024
 ref: Arabi et al. 2024. Sustainable and Resilient Infrastructure
-journal: "Sustainable and Resilient Infrastructure NA(NA):1–24."
-volume: NA
+journal: "Sustainable and Resilient Infrastructure 9(6):616–639."
+volume: 9
 pdf:
 doi: 10.1080/23789689.2024.2344909
 github:
