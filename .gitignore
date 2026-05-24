@@ -4,6 +4,7 @@ environment*
 _site
 
 vendor
+!css/bootstrap/vendor/
 # Projects
 projects/
 !projects/index.html
