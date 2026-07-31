@@ -6,28 +6,32 @@ categories:
 ---
 
 {% for paper in site.categories.papers %}
-{% capture prev_year %}{{ this_year }}{% endcapture %}
-{% capture this_year %}{{ paper.year }}{% endcapture %}
-
+{% comment %}
+  One heading per year, with everything from 2013 back collapsed into a single
+  trailing group. Grouping on this label rather than on the year itself means a
+  year with no papers can't silently merge older work into the group above it.
+{% endcomment %}
+{% capture prev_group %}{{ this_group }}{% endcapture %}
+{% if paper.year > 2013 %}
+  {% capture this_group %}{{ paper.year }}{% endcapture %}
+{% else %}
+  {% capture this_group %}2013 and earlier{% endcapture %}
+{% endif %}
 
 {% if forloop.first %}
     {% assign counter = 0 %}
   <div class="row">
     <div class="col-md-12">
-      <h1>{{ this_year }}</h1>
+      <h1>{{ this_group }}</h1>
 <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />    </div>
   </div>
   <div class="row">
-  {% elsif this_year != prev_year and this_year > "2012" %}
+  {% elsif this_group != prev_group %}
     {% assign counter = 0 %}
   </div>
   <div class="row">
     <div class="col-md-12">
-      {% if this_year != "2013" %}
-      <h1>{{ this_year }}</h1>
-      {% else %}
-      <h1>2013 and earlier</h1>
-      {% endif %}
+      <h1>{{ this_group }}</h1>
       <hr style="height:2px;border:none;color:#808088;background-color:#808088;" />
 
     </div>
@@ -49,9 +53,12 @@ categories:
         <div class="smallhead mb-1"><a href="{{ paper.url }}" class="off">{{ paper.title }}</a></div>
         <p class="note">{{ paper.ref }}</p>
       </div>
-      <a href="{{ paper.url }}">
-        <img class="ml-3" width=100 class="media-object" src="{{ paper.image }}">
+      {% if paper.image %}
+      <a href="{{ paper.url }}" class="paperthumb ml-3">
+        <img class="media-object" src="{{ paper.image }}" loading="lazy"
+             alt="Figure from {{ paper.title | escape }}">
       </a>
+      {% endif %}
     </div>
     <div class="bigspacer"></div>
     <div class="spacer"></div>

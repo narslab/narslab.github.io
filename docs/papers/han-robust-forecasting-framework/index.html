@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>Robust Forecasting Framework for Energy-Informed Planning in Urban Rail Transit Systems</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="NARS Lab" href="https://narslab.org/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg">
+					N A R S Lab
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">Blog</a>
+						</li>
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href="/papers/">Papers</a>
+						</li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">Projects</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/dashboards/">Dashboards</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/courses/">Courses</a></li>	
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/team/">Team</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	<div class="row">
+	<div class="col-lg-12">
+		
+		<img class="float-left pad-right paperfigure d-none d-sm-block" src="/images/papers/2025-12-17-han-robust-forecasting-framework.jpg"
+		     alt="Figure from Robust Forecasting Framework for Energy-Informed Planning in Urban Rail Transit Systems">
+		<img width=85 class="float-left pad-right d-block d-sm-none" src="/images/papers/2025-12-17-han-robust-forecasting-framework.jpg" alt="">
+		
+		<div class="titlebox">
+			<div class="title">
+				Robust Forecasting Framework for Energy-Informed Planning in Urban Rail Transit Systems
+			</div>
+			<p>
+			<div class="smallhead">
+				Zhuo Han, Eleni Christofa, Eric J. Gonzales, Sean Donaghy, Jimi Oke
+				2025.
+				Data Science for Transportation 8(1):2.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			
+			<div class="smallhead">
+				PDF
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="/pdfs/papers/2025-han-robust-forecasting-framework.pdf">2025-han-robust-forecasting-framework.pdf</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			
+			<div class="smallhead">
+				DOI
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="https://doi.org/10.1007/s42421-025-00145-1">10.1007/s42421-025-00145-1</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<h1 id="abstract">Abstract</h1>
+
+<p>Urban Rail Transit (URT) systems play a critical role in modern cities but consume significant amounts of energy. Understanding and predicting energy consumption patterns in these systems is vital for sustainable urban planning and cost-effective decision-making. This study develops a comprehensive framework for forecasting energy consumption based on planning metrics, ridership data, and historical energy and weather, using the Massachusetts Bay Transportation Authority (MBTA)’s URT system as a case study. The fitted eXtreme Gradient Boosting (XGBoost) model demonstrated high predictive accuracy, with a mean absolute percentage error (MAPE) of 3.3%, while ridge regression models reliably forecasted ridership and temperature to support future planning. We further evaluated eight operational plans under nine ridership–temperature scenarios. Each plan represents a set of operational adjustments that may be pursued to regulate service conditions or respond to disruptions. These analyses highlight the model’s capability to provide insightful forecasts that inform decision-making processes and optimize energy usage, thereby supporting sustainable and efficient urban rail transit operations.</p>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

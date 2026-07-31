@@ -18,3 +18,9 @@ projects/
 .DS_Store
 .ruby-version
 .tweet-cache
+# Zotero paper sync (_scripts/sync-papers.sh)
+_scripts/.env.zotero
+_scripts/.venv/
+_scripts/.zotero-cache.json
+_scripts/__pycache__/
+.claude/*.tmp.*

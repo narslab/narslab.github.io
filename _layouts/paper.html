@@ -5,8 +5,9 @@ layout: default
 <div class="row">
 	<div class="col-lg-12">
 		{% if page.image %}
-		<img class="pull-left pad-right media-object d-none d-sm-block" src="{{ page.image }}">
-		<img width=85 class="float-left pad-right d-block d-sm-none" src="{{ page.image }}">
+		<img class="float-left pad-right paperfigure d-none d-sm-block" src="{{ page.image }}"
+		     alt="Figure from {{ page.title | escape }}">
+		<img width=85 class="float-left pad-right d-block d-sm-none" src="{{ page.image }}" alt="">
 		{% endif %}
 		<div class="titlebox">
 			<div class="title">

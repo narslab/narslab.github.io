@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>A multiscale interpretability framework for identifying actionable road network features to mitigate congestion in highly congested cities</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="NARS Lab" href="https://narslab.org/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg">
+					N A R S Lab
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">Blog</a>
+						</li>
+						
+						<li class="nav-link active">
+						
+						<a class="mx-1" href="/papers/">Papers</a>
+						</li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">Projects</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/dashboards/">Dashboards</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/courses/">Courses</a></li>	
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/team/">Team</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	<div class="row">
+	<div class="col-lg-12">
+		
+		<img class="float-left pad-right paperfigure d-none d-sm-block" src="/images/papers/2026-06-26-kumar-multiscale-interpretability-framework.jpg"
+		     alt="Figure from A multiscale interpretability framework for identifying actionable road network features to mitigate congestion in highly congested cities">
+		<img width=85 class="float-left pad-right d-block d-sm-none" src="/images/papers/2026-06-26-kumar-multiscale-interpretability-framework.jpg" alt="">
+		
+		<div class="titlebox">
+			<div class="title">
+				A multiscale interpretability framework for identifying actionable road network features to mitigate congestion in highly congested cities
+			</div>
+			<p>
+			<div class="smallhead">
+				Nishant Kumar, Yatao Zhang, Nina Wiedemann, Jimi Oke, Martin Raubal
+				2026.
+				Scientific Reports.
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="glyphbox note">
+			
+			<div class="smallhead">
+				PDF
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-file-text-o fa-fw"></i>
+				<a class="off" href="/pdfs/papers/2026-kumar-multiscale-interpretability-framework.pdf">2026-kumar-multiscale-interpretability-framework.pdf</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			
+			<div class="smallhead">
+				DOI
+			</div>
+			<div class="pad-left note">
+				<div class="smallspacer"></div>
+				<i class="fa fa-external-link fa-fw"></i>
+				<a class="off" href="https://doi.org/10.1038/s41598-026-58442-w">10.1038/s41598-026-58442-w</a>
+			</div>
+			<div class="bigspacer"></div>
+			
+			
+			
+		</div>
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<h1 id="abstract">Abstract</h1>
+
+<p>Transferring congestion mitigation strategies across cities remains challenging due to two compounding issues: road network features affect congestion differently in different cities, and their influence may vary across spatial scales. We propose a multiscale framework to identify “actionable” road network features, defined as those maintaining a consistent directional association with traffic congestion across varying spatial resolutions. Through systematic investigation of seven highly congested cities worldwide, our findings reveal strong city-specific signatures in feature importance, indicating supply-side planning must be tailored individually. However, the most consistently exacerbating features for demand-side consideration show notable similarities across cities. We emphasise that the directional associations identified reflect patterns in the training data and should not be interpreted as causal effects; the identified features are policy-relevant candidates subject to validation through counterfactual modelling. Feature attribution is model-dependent: results are derived from RF-based TreeSHAP and should be interpreted accordingly. In the short term, our results directly inform ongoing measures like congestion pricing and personalised route choice applications, making them more robust and publicly acceptable. Long-term, our insights encourage re-evaluating scepticism toward infrastructure planning and highlight opportunities for designing congestion-resistant future cities. Given the diverse city selection, common observations identified can likely be extrapolated to new cities when detailed analysis is constrained by data limitations. We provide key recommendations for researchers. First, data-driven congestion studies must explicitly interrogate microscopic spatial scales, because coarse-scale models can conceal scale-dependent reversals in feature influence that directly undermine policy robustness. Second, simulation-based counterfactual approaches should test road network features beyond known value ranges.</p>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

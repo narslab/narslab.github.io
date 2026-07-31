@@ -1,0 +1,12 @@
+# PDF overrides for paper_thumbs.py -- normally empty.
+#
+# A post's PDF is found automatically at either of these, then failing that
+# through its DOI in your local Zotero storage:
+#
+#     pdfs/papers/<year>-<author>-<slug>.pdf        e.g. 2026-arabi-typology-us-transit.pdf
+#     pdfs/papers/<full-post-stem>.pdf              e.g. 2026-01-01-arabi-typology-us-transit.pdf
+#
+# Add a line here only for a PDF that has to keep some other filename. Paths are
+# relative to the repo root.
+#
+#   <post-stem>: <path/to/file.pdf>
