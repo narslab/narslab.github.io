@@ -2,6 +2,7 @@
 layout: member
 title: Mahsa Arabi
 position: Postdoc
+alumni: true
 handle: maharabi
 github: maharabi
 twitter:

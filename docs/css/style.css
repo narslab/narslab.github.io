@@ -330,6 +330,12 @@ img.paperfigure {
   min-height: 120px;
 }
 
+/* Past members keep their photo, desaturated so the current team still reads
+   as the foreground of the page. */
+.alumni-photo img {
+  filter: grayscale(100%);
+}
+
 .talkbox {
   min-height: 100px;
 }

@@ -2,6 +2,7 @@
 layout: member
 title: Geehan Altayb
 position: Undergraduate Student (REU)
+alumni: true
 handle:
 github: latartademugello5
 twitter:

@@ -2,6 +2,7 @@
 layout: member
 title: Andrew Ruger
 position: Undergraduate Student (REU)
+alumni: true
 handle:
 github: AndrewRuger
 twitter:
