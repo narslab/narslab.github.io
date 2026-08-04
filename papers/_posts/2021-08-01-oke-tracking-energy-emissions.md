@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Tracking the Energy and Emissions of MBTA Rapid Transit Vehicles"
-image: /images/papers/2021-08-01-oke-tracking-energy-emissions.jpg
+image: /images/papers/2021-08-01-oke-tracking-energy-emissions.png
 authors: Jimi Oke, Eleni Christofa, Eric Gonzales, Zhuo Han, Sean Donaghy
 year: 2021
 ref: Oke et al. 2021. Massachusetts Department of Transportation

@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Roadway Crash Typology of Census Tracts Enables Targeted Interventions via Interpretable Machine Learning"
-image: /images/papers/2025-07-03-abdalazeem-roadway-crash-typology.png
+image: /images/papers/2025-07-03-abdalazeem-roadway-crash-typology.jpg
 authors: Mohammed Abdalazeem, Jimi Oke
 year: 2025
 ref: Abdalazeem and Oke 2025. Data Science for Transportation

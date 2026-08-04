@@ -1,7 +1,7 @@
 ---
 layout: paper
 title: "Drinking water accessibility typologies in low- and middle-income countries"
-image: /images/papers/2023-02-01-chung-drinking-water-accessibility.jpg
+image: /images/papers/2023-02-01-chung-drinking-water-accessibility.png
 authors: Hichul Chung, Emily Kumpel, Jimi Oke
 year: 2023
 ref: Chung et al. 2023. Environmental Research Letters

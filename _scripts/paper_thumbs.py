@@ -257,22 +257,68 @@ CAPTION_RE = re.compile(r"^\s*(?:fig(?:ure)?\.?|abb\.?)\s*(\d{1,2})\b", re.I)
 # Minimum share of a page an *uncaptioned* region must cover to be used.
 FALLBACK_MIN_COVERAGE = 0.12
 
+# Typology papers are about where things are, so the study-area map carries the
+# result far better than the framework diagram or the indicator histograms that
+# usually come first. Titles matching this get their map preferred.
+PREFER_MAP_TITLE_RE = re.compile(r"typolog", re.I)
+
+# Caption wording that reliably indicates a map. Deliberately narrow -- a false
+# positive here silently swaps in the wrong figure.
+MAP_CAPTION_RE = re.compile(
+    r"\bmaps?\b|\bchoropleth|\bspatial distribution|\bgeographic(?:al)? distribution"
+    r"|\blocations? of\b|\bstudy area\b|\bacross (?:the )?US states\b",
+    re.I,
+)
+
 
 def page_regions(page):
-    """Merged image + vector-drawing regions on a page that could be a figure."""
+    """Merged image + vector-drawing regions on a page that could be a figure.
+
+    Rects are returned in display space. Landscape figure pages are often
+    stored rotated, and PyMuPDF reports block bboxes in the *unrotated* page
+    space while page.rect is already rotated -- so a caption that sits below
+    its figure on screen looks like it sits beside it in raw coordinates.
+    Multiplying through page.rotation_matrix puts everything in one space (it
+    is the identity for unrotated pages).
+    """
     pr = page.rect
     page_area = pr.width * pr.height
     if page_area <= 0:
         return [], page_area
 
-    candidates = [b["bbox"] for b in page.get_text("dict")["blocks"] if b["type"] == 1]
+    def is_page_furniture(r):
+        """A thin strip hugging the top or bottom edge: running head, rule,
+        publisher logo. Harmless on its own, but merging chains it onto a
+        figure and drags the journal masthead into the thumbnail."""
+        return (r.height < 0.04 * pr.height
+                and (r.y1 < 0.09 * pr.height or r.y0 > 0.91 * pr.height))
+
+    # Nothing that belongs to a figure lives in the page margins. Clamping here
+    # matters for maps, whose polygons carry bboxes running well past the plot
+    # frame (and often off the page) even though rendering clips them -- left
+    # alone, the merged region reaches up over the journal running head.
+    content = fitz.Rect(pr.x0, pr.y0 + 0.05 * pr.height,
+                        pr.x1, pr.y1 - 0.05 * pr.height)
+
+    def keep(r):
+        r = r & content
+        if r.is_empty or is_page_furniture(r):
+            return None
+        return r
+
+    rot = page.rotation_matrix
+    candidates = []
+    for b in page.get_text("dict")["blocks"]:
+        if b["type"] == 1 and (r := keep(fitz.Rect(b["bbox"]) * rot)):
+            candidates.append(r)
     for dr in page.get_drawings():
-        r = fitz.Rect(dr["rect"])
+        r = fitz.Rect(dr["rect"]) * rot
         if r.width < 2 or r.height < 2:
             continue
         if r.width * r.height > 0.9 * page_area:
             continue  # page-sized background fill, not a figure
-        candidates.append(r)
+        if (r := keep(r)):
+            candidates.append(r)
 
     regions = []
     for c in merge_rects(candidates) if candidates else []:
@@ -292,36 +338,47 @@ def captioned_figures(page, regions):
 
     Anchoring on a caption is what separates an actual figure from a journal
     advert, a masthead, or a decorative cover image -- none of which are
-    captioned. Yields (figure_number, region).
+    captioned. Yields (figure_number, region, caption_text).
     """
     out = []
     blocks = page.get_text("dict")["blocks"]
     for b in blocks:
         if b["type"] != 0:
             continue
-        text = "".join(s["text"] for l in b["lines"] for s in l["spans"])[:40]
+        # Enough of the caption to tell what the figure shows, not just its number.
+        text = "".join(s["text"] for l in b["lines"] for s in l["spans"])[:220]
         m = CAPTION_RE.match(text)
         if not m:
             continue
-        cap = fitz.Rect(b["bbox"])
+        cap = fitz.Rect(b["bbox"]) * page.rotation_matrix  # match page_regions' space
         for r in regions:
             gap = cap.y0 - r.y1
-            if not -6 <= gap <= 60:
+            # A caption normally sits just below its figure. It can also land
+            # *inside* the region when stray vector art near the caption got
+            # merged in, so allow that and crop the figure at the caption.
+            if gap > 60 or gap < -0.35 * r.height:
                 continue
             overlap = min(cap.x1, r.x1) - max(cap.x0, r.x0)
             if overlap < 0.35 * min(cap.width, r.width):
                 continue
-            out.append((int(m.group(1)), r))
+            if gap < 0:
+                # Clear the caption by more than the padding best_figure adds
+                # back when rendering, or its top line creeps into the crop.
+                r = fitz.Rect(r.x0, r.y0, r.x1, cap.y0 - 8)
+                if r.height < 0.10 * page.rect.height:
+                    continue
+            out.append((int(m.group(1)), r, text))
     return out
 
 
-def best_figure(path, max_pages=12):
+def best_figure(path, max_pages=12, prefer_map=False):
     """Render a representative figure as a PIL Image, or None.
 
     Prefers the lowest-numbered captioned figure -- Figure 1 is nearly always
     the framework diagram, study area, or overview, which reads far better as a
-    thumbnail than whichever figure happens to be largest. Falls back to the
-    biggest plausible region when a PDF has no detectable captions.
+    thumbnail than whichever figure happens to be largest. With prefer_map, a
+    captioned map wins over that ordering when the paper has one. Falls back to
+    the biggest plausible region when a PDF has no detectable captions.
     """
     doc = fitz.open(path)
     captioned, fallback = [], None
@@ -332,8 +389,8 @@ def best_figure(path, max_pages=12):
         if not regions:
             continue
 
-        for num, rect in captioned_figures(page, regions):
-            captioned.append((num, -(rect.width * rect.height), pno, rect))
+        for num, rect, caption in captioned_figures(page, regions):
+            captioned.append((num, -(rect.width * rect.height), pno, rect, caption))
 
         for r in regions:
             coverage = r.width * r.height / page_area
@@ -348,7 +405,10 @@ def best_figure(path, max_pages=12):
                 fallback = (score, pno, r)
 
     if captioned:
-        _, _, pno, rect = min(captioned, key=lambda t: t[:3])
+        if prefer_map:
+            maps = [c for c in captioned if MAP_CAPTION_RE.search(c[4])]
+            captioned = maps or captioned
+        _, _, pno, rect, _ = min(captioned, key=lambda t: t[:3])
     elif fallback:
         _, pno, rect = fallback
     else:
@@ -520,8 +580,9 @@ def main():
             pdf = find_pdf(stem, fm.get("doi", ""), fm.get("title", ""),
                            overrides, zotero_index)
             if pdf:
+                prefer_map = bool(PREFER_MAP_TITLE_RE.search(fm.get("title", "")))
                 try:
-                    img = best_figure(pdf)
+                    img = best_figure(pdf, prefer_map=prefer_map)
                 except Exception as e:  # a malformed PDF must not stop the run
                     failures.append(f"{stem}: {type(e).__name__}: {e}")
 
