@@ -1,0 +1,360 @@
+---
+- repo: narslab/project-groundwork
+  title: project-groundwork
+  owner: narslab
+  description: Cost-benefit model for electric-broadband utility co-deployment decision
+    support
+  url: "/projects/project-groundwork/"
+  contributors:
+  - login: maharabi
+    avatar: https://avatars.githubusercontent.com/u/87103328?v=4&s=50
+    url: https://github.com/maharabi
+  - login: naskoap
+    avatar: https://avatars.githubusercontent.com/u/10101246?v=4&s=50
+    url: https://github.com/naskoap
+  - login: jimioke
+    avatar: https://avatars.githubusercontent.com/u/6685350?v=4&s=50
+    url: https://github.com/jimioke
+  commits:
+  - date: 2025-08-25 16:28:55.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/project-groundwork/commit/bbdd214e6e92131348fd05f9e815d84368725cc8
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2025-08-25 16:28:41.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/project-groundwork/commit/ac369d8a643050863f03c61d67c372b374a4f90b
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2025-08-25 14:40:46.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/project-groundwork/commit/bedd5785de3c9dab13648ae611dc0c9b3467701c
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2025-02-06 18:56:57.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/project-groundwork/commit/870966f32744c570873b449598b291ef7570c6ec
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2024-10-20 15:05:24.000000000 Z
+    message: Account for the inflation rate of 1% in conversion costs
+    url: https://github.com/narslab/project-groundwork/commit/29d88d376602b9789bfd430de0ed915d84f05d02
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  readme_only: true
+- repo: narslab/equi-resnet
+  title: equi-resnet
+  owner: narslab
+  description: Equitably Resilient Critical Infrastructure Networks
+  url: "/projects/equi-resnet/"
+  contributors:
+  - login: maharabi
+    avatar: https://avatars.githubusercontent.com/u/87103328?v=4&s=50
+    url: https://github.com/maharabi
+  commits:
+  - date: 2025-08-25 16:27:40.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/equi-resnet/commit/2f36cfeb82ef5b0e6e7c0e89ce0eb8786959f1b9
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2025-08-25 14:51:58.000000000 Z
+    message: Create README.md
+    url: https://github.com/narslab/equi-resnet/commit/f8bd6b2dd2bb7ae1d6af0fbbbb82e946e6d48324
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2024-03-22 16:35:52.000000000 Z
+    message: Remove the equi-resnet directory
+    url: https://github.com/narslab/equi-resnet/commit/98b2d74bbd10791117a9fbc51a54f318bfec94cf
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2024-03-22 16:26:37.000000000 Z
+    message: Initial commit
+    url: https://github.com/narslab/equi-resnet/commit/f9b41a619ac6ce0a31699400add11f006c992026
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2024-03-22 16:24:16.000000000 Z
+    message: Removed existing equi-resnet directory from Git tracking
+    url: https://github.com/narslab/equi-resnet/commit/29e9361027872cba0f999afe8c1c41199e1e0f77
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  readme_only: true
+- repo: narslab/transit-electrification-futures
+  title: transit-electrification-futures
+  owner: narslab
+  description: 'Simulating various electrification pathways to optimize emissions '
+  url: "/projects/transit-electrification-futures/"
+  contributors:
+  - login: maharabi
+    avatar: https://avatars.githubusercontent.com/u/87103328?v=4&s=50
+    url: https://github.com/maharabi
+  - login: jimioke
+    avatar: https://avatars.githubusercontent.com/u/6685350?v=4&s=50
+    url: https://github.com/jimioke
+  commits:
+  - date: 2025-07-31 13:15:39.000000000 Z
+    message: Expand the emissions model to account for lifecycle emissions
+    url: https://github.com/narslab/transit-electrification-futures/commit/03076e9a8d65d573b27959530ec034378a22dc7b
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2025-04-08 20:26:28.000000000 Z
+    message: Simulation to 2040
+    url: https://github.com/narslab/transit-electrification-futures/commit/cabdd4de1bc4ec784b6a99032cd721dd52fcd442
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2025-04-08 19:36:02.000000000 Z
+    message: Continue simulation to year 2040
+    url: https://github.com/narslab/transit-electrification-futures/commit/dbb25cf15d33f4f2c8b5cf4962f646c508ccad7e
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2025-02-12 15:14:32.000000000 Z
+    message: Merge branch 'main' of https://github.com/narslab/transit-electrification-futures
+    url: https://github.com/narslab/transit-electrification-futures/commit/1e1b5a3bdc634b366f252158f3d9c3bf7377b3dc
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2025-02-12 15:13:52.000000000 Z
+    message: Sensitivity analysis on -20% charging capacity
+    url: https://github.com/narslab/transit-electrification-futures/commit/13b83cab3326d6259f02a7726783e4b78a94bb73
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  readme_only: true
+- repo: narslab/tracking-msa-ghg
+  title: tracking-msa-ghg
+  owner: narslab
+  description: Tracking regional emissions for climate action
+  url: "/projects/tracking-msa-ghg/"
+  contributors:
+  - login: peiyaozhao777
+    avatar: https://avatars.githubusercontent.com/u/55726976?v=4&s=50
+    url: https://github.com/peiyaozhao777
+  - login: jimioke
+    avatar: https://avatars.githubusercontent.com/u/6685350?v=4&s=50
+    url: https://github.com/jimioke
+  - login: ma-mohammed
+    avatar: https://avatars.githubusercontent.com/u/68115570?v=4&s=50
+    url: https://github.com/ma-mohammed
+  commits:
+  - date: 2025-05-05 23:18:36.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/tracking-msa-ghg/commit/57ae2cdcac9debd69b314bee56a4752ee0c8bd4d
+    author_login: peiyaozhao777
+    author_url: https://github.com/peiyaozhao777
+  - date: 2025-05-05 23:18:14.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/tracking-msa-ghg/commit/d38c84ba350910c06ab2b356a42d0be7e9bcf6e8
+    author_login: peiyaozhao777
+    author_url: https://github.com/peiyaozhao777
+  - date: 2025-03-24 13:59:24.000000000 Z
+    message: updates
+    url: https://github.com/narslab/tracking-msa-ghg/commit/97995c17eaa3a491d8670ed77b00d6361856344c
+    author_login: peiyaozhao777
+    author_url: https://github.com/peiyaozhao777
+  - date: 2025-03-24 13:58:52.000000000 Z
+    message: updates
+    url: https://github.com/narslab/tracking-msa-ghg/commit/d31e096281833e99bd794ad08029e50fdc05540d
+    author_login: peiyaozhao777
+    author_url: https://github.com/peiyaozhao777
+  - date: 2025-03-18 18:03:26.000000000 Z
+    message: updated futures-generation.ipynb
+    url: https://github.com/narslab/tracking-msa-ghg/commit/6bd603295f04015e53d77b0bec356d3fa141715d
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  readme_only: true
+- repo: narslab/enhanced-trip-chaining
+  title: enhanced-trip-chaining
+  owner: narslab
+  description: This repository provides a Python-based framework for enhancing trip-chaining
+    analysis in public transit systems using mobile ticketing data. The framework
+    incorporates passenger typology, seasonality, and spatial error correction to
+    improve the accuracy of trip inference.
+  url: "/projects/enhanced-trip-chaining/"
+  contributors:
+  - login: ma-mohammed
+    avatar: https://avatars.githubusercontent.com/u/68115570?v=4&s=50
+    url: https://github.com/ma-mohammed
+  commits:
+  - date: 2024-09-04 16:44:21.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/enhanced-trip-chaining/commit/81279f4ce14df5976245757405035718073e7b48
+    author_login: ma-mohammed
+    author_url: https://github.com/ma-mohammed
+  - date: 2024-09-04 16:43:43.000000000 Z
+    message: Initial commit
+    url: https://github.com/narslab/enhanced-trip-chaining/commit/5a88ed03c662c6158efff8beb303569c5eb11fb1
+    author_login: ma-mohammed
+    author_url: https://github.com/ma-mohammed
+  readme_only: true
+- repo: narslab/spatial-crash-typology
+  title: spatial-crash-typology
+  owner: narslab
+  description: A Spatial Typology Analysis of Crash Characteristics.
+  url: "/projects/spatial-crash-typology/"
+  contributors:
+  - login: ma-mohammed
+    avatar: https://avatars.githubusercontent.com/u/68115570?v=4&s=50
+    url: https://github.com/ma-mohammed
+  commits:
+  - date: 2024-08-16 02:36:39.000000000 Z
+    message: Merge branch 'main' of https://github.com/narslab/spatial-crash-typology
+    url: https://github.com/narslab/spatial-crash-typology/commit/625d69870fcda56946ca7450d84dbdb302714d7f
+    author_login: ma-mohammed
+    author_url: https://github.com/ma-mohammed
+  - date: 2024-08-16 02:36:31.000000000 Z
+    message: Create requirements.txt
+    url: https://github.com/narslab/spatial-crash-typology/commit/ec802be7977d9ea32eecb845acdac0b743a2655e
+    author_login: ma-mohammed
+    author_url: https://github.com/ma-mohammed
+  - date: 2024-08-16 02:36:28.000000000 Z
+    message: Delete Typology_analysis2_proportions-UMAP final with better features
+      and grid search for umap.ipynb
+    url: https://github.com/narslab/spatial-crash-typology/commit/8ca31c6e04a1718e9565962f2351a8151b9c6873
+    author_login: ma-mohammed
+    author_url: https://github.com/ma-mohammed
+  - date: 2024-08-16 02:36:25.000000000 Z
+    message: Create spatial-typology-analysis.ipynb
+    url: https://github.com/narslab/spatial-crash-typology/commit/587050f9264c227dd2de5cf0d7270b7b76d91f6e
+    author_login: ma-mohammed
+    author_url: https://github.com/ma-mohammed
+  - date: 2024-08-16 02:23:03.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/spatial-crash-typology/commit/ff8cf1c3367796b6a2f8bc33850e633f697122f0
+    author_login: ma-mohammed
+    author_url: https://github.com/ma-mohammed
+  readme_only: true
+- repo: narslab/bus-transit-energy
+  title: bus-transit-energy
+  owner: narslab
+  description:
+  url: "/projects/bus-transit-energy/"
+  contributors:
+  - login: maharabi
+    avatar: https://avatars.githubusercontent.com/u/87103328?v=4&s=50
+    url: https://github.com/maharabi
+  commits:
+  - date: 2023-04-08 01:54:08.000000000 Z
+    message: Delete vehicle summaries
+    url: https://github.com/narslab/bus-transit-energy/commit/362534b4752d55953d189c6bcc721140cb58c287
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2023-04-05 20:18:39.000000000 Z
+    message: Create README.md
+    url: https://github.com/narslab/bus-transit-energy/commit/159921887eb9e8c42a18ba3e0feea72a4a41df14
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2023-04-05 20:13:33.000000000 Z
+    message: Clean jupyter files
+    url: https://github.com/narslab/bus-transit-energy/commit/fda6c1dec2c2e90492f915ce5b9b4498272c18f3
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  - date: 2023-04-05 20:01:56.000000000 Z
+    message: Code for TRR paper entitled A Comprehensive Energy Modeling Framework
+      for Multi-Powertrain Bus Transit Systems
+    url: https://github.com/narslab/bus-transit-energy/commit/fa9221919b4904d2768e265cc48102e621e92011
+    author_login: maharabi
+    author_url: https://github.com/maharabi
+  readme_only: true
+- repo: narslab/water-accessibility
+  title: water-accessibility
+  owner: narslab
+  description: Quantifying water accessibility and understanding the relevant factors
+    in a global scale.
+  url: "/projects/water-accessibility/"
+  contributors:
+  - login: jimioke
+    avatar: https://avatars.githubusercontent.com/u/6685350?v=4&s=50
+    url: https://github.com/jimioke
+  - login: hichul219
+    avatar: https://avatars.githubusercontent.com/u/76232119?v=4&s=50
+    url: https://github.com/hichul219
+  commits:
+  - date: 2023-02-04 18:46:17.000000000 Z
+    message: update readme
+    url: https://github.com/narslab/water-accessibility/commit/1a990364d6c210fa207bdb6805072012f072d1f7
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  - date: 2023-02-04 18:41:58.000000000 Z
+    message: untrack archive files
+    url: https://github.com/narslab/water-accessibility/commit/126db70d156bb90c773827572e80b1872f2d97e1
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  - date: 2023-02-04 18:40:35.000000000 Z
+    message: removed lock files
+    url: https://github.com/narslab/water-accessibility/commit/dcd79168de829403cc69debb905fd93c4e021242
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  - date: 2023-02-04 18:34:36.000000000 Z
+    message: cleaned up data files
+    url: https://github.com/narslab/water-accessibility/commit/51da6348fb1050fe8178baab385de9c4062d9c59
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  - date: 2023-02-04 18:30:12.000000000 Z
+    message: remove unnecessary files from results folder
+    url: https://github.com/narslab/water-accessibility/commit/29c530f24984d967e3c754a08fdf8702e1d16899
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  readme_only: true
+- repo: narslab/mbta-rail-system-energy
+  title: mbta-rail-system-energy
+  owner: narslab
+  description:
+  url: "/projects/mbta-rail-system-energy/"
+  contributors:
+  - login: zhuo-han
+    avatar: https://avatars.githubusercontent.com/u/64714994?v=4&s=50
+    url: https://github.com/zhuo-han
+  commits:
+  - date: 2022-03-24 14:58:01.000000000 Z
+    message: add all manuscript tex files
+    url: https://github.com/narslab/mbta-rail-system-energy/commit/ac0c3d0376ca34f52b785e06c7a31b1ecd83a7d5
+    author_login: zhuo-han
+    author_url: https://github.com/zhuo-han
+  - date: 2022-03-24 14:40:29.000000000 Z
+    message: Update README.md
+    url: https://github.com/narslab/mbta-rail-system-energy/commit/656227a39701ae6c0909371d2f753366ee77af2b
+    author_login: zhuo-han
+    author_url: https://github.com/zhuo-han
+  - date: 2022-03-23 18:28:57.000000000 Z
+    message: Initial commit
+    url: https://github.com/narslab/mbta-rail-system-energy/commit/862f097f271ab6ba97feb6b68b48fb3262e9f699
+    author_login: zhuo-han
+    author_url: https://github.com/zhuo-han
+  readme_only: true
+- repo: narslab/tree-risk-ai
+  title: tree-risk-ai
+  owner: narslab
+  description: Artificial Intelligence for Tree Failure Identification and Risk Quantification
+  url: "/projects/tree-risk-ai/"
+  contributors:
+  - login: jimioke
+    avatar: https://avatars.githubusercontent.com/u/6685350?v=4&s=50
+    url: https://github.com/jimioke
+  - login: naskoap
+    avatar: https://avatars.githubusercontent.com/u/10101246?v=4&s=50
+    url: https://github.com/naskoap
+  commits:
+  - date: 2021-03-08 18:02:11.000000000 Z
+    message: Improved README documentation of all scripts and notebooks
+    url: https://github.com/narslab/tree-risk-ai/commit/6cb1df60f12167059dcc3c5ee15625090255c4df
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  - date: 2021-03-08 16:04:05.000000000 Z
+    message: Created arXiv version of manuscript (relevant options added in documentclass
+      declaration)
+    url: https://github.com/narslab/tree-risk-ai/commit/15913d60af6c3710a9f76a31e087d0f0ea093c32
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  - date: 2021-03-05 22:37:34.000000000 Z
+    message: doublespaced manuscript
+    url: https://github.com/narslab/tree-risk-ai/commit/4ae6513a3a3c063d60eaa5ddfd659d33f0492596
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  - date: 2021-03-05 22:27:10.000000000 Z
+    message: final edits to first journal submission
+    url: https://github.com/narslab/tree-risk-ai/commit/b70cd158f2ab484acc9e3f5e582a17203f3061bb
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  - date: 2021-03-05 22:22:45.000000000 Z
+    message: Merge remote-tracking branch 'refs/remotes/origin/master'
+    url: https://github.com/narslab/tree-risk-ai/commit/1b10e655d8e3fa4eb508430e2541a6c05e5f040b
+    author_login: jimioke
+    author_url: https://github.com/jimioke
+  readme_only: true

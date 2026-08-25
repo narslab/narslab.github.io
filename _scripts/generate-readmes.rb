@@ -45,6 +45,9 @@ module Readmes
 						matches = matchesHTML + matchesMD
 						matches.each do |match|
 							imagePath = match[0]
+							# absolute links (e.g. github.com/user-attachments) already
+							# resolve on their own; only repo-relative paths need pulling down
+							next if imagePath =~ /\A(https?:)?\/\//
 							puts "\t\t#{imagePath}"
 							imageUrl = "https://raw.githubusercontent.com/#{repo}/main/#{imagePath}"
 							begin

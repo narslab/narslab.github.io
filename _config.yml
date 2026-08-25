@@ -70,6 +70,8 @@ exclude:
   - .sass-cache/
   - .jekyll-cache/
 
+# Each entry gets a project page built from the repo's README on main.
+# A repo whose README cannot be fetched is skipped, and no card is listed for it.
 readmes:
   - narslab/mbta-rail-system-energy
   - narslab/water-accessibility
@@ -80,21 +82,13 @@ readmes:
   - narslab/spatial-crash-typology
   - narslab/transit-electrification-futures
   - narslab/bike-map-typology
-
-projects:
-  - narslab/tree-risk-ai
-  # - narslab/bus-transit-energy
   - narslab/equi-resnet
-  # - narslab/mbta-rail-system-energy
-  # - narslab/msa-emission-typologies
-  # - narslab/project-groundwork
-  # - narslab/pv-trips-energy
-  # - narslab/pvta-odx  
-  # - narslab/pvta-spatiotemporal-typologies
-  # - narslab/tracking-msa-ghg
-  # - narslab/treem
-  # - narslab/treem-ml-line-energy
-  # - narslab/treem-ts-energy-forecast
+  - narslab/tree-risk-ai
+
+# Repos cloned in full so that pages other than the README can be published.
+# Empty by design: a working copy is hundreds of MB and must not be committed,
+# and the CI build has no way to create one. Prefer `readmes:` above.
+projects: []
 
 # Exclude from processing.
 # The following items will not be processed, by default.

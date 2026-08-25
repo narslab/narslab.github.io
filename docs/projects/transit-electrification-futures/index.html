@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8"/>
+	<title>transit-electrification-futures/</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- RSS feed -->
+	<link rel="alternate" type="application/rss+xml" title="NARS Lab" href="https://narslab.org/feed.xml">
+
+  <!-- Customized Bootstrap + Font Awesome + Solarized -->
+  <link href="/css/style.css" rel="stylesheet" media="screen">
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/images/favicon.png"/>
+
+	<!-- Typekit -->
+	<script>
+	  (function(d) {
+		var config = {
+		  kitId: 'xeu8jut',
+		  scriptTimeout: 3000
+		},
+		h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='//use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+	  })(document);
+	</script>
+
+	<!-- Google Analytics -->
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-26244371-2', 'bedford.io');
+		ga('send', 'pageview');
+
+	</script>
+
+	<!-- jQuery -->
+	<script src="/js/jquery.min.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+	<div id="header">
+		<nav class="navbar navbar-expand-md navbar-light bg-navbar">
+			<div class="container">
+				
+				<a class="navbar-brand" href="/">
+					<img class="logo navbar-brand d-inline-block align-top ml-0 mr-1" src="/images/logo.svg">
+					N A R S Lab
+				</a>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav nav-pills ml-auto">
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/blog/">Blog</a>
+						</li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/papers/">Papers</a>
+						</li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/projects/">Projects</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/dashboards/">Dashboards</a></li>
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/courses/">Courses</a></li>	
+						
+						<li class="nav-link">
+						
+						<a class="mx-1" href="/team/">Team</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+
+	<div class="container mt-4">
+
+	
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="bigtitle titlebox">
+      <nav aria-label="breadcrumb">
+  			<ol class="breadcrumb">
+  			
+  			
+  				
+  				
+  				
+  				<li class="breadcrumb-item active">
+            transit-electrification-futures
+          </li>
+  				
+  			
+  			</ol>
+      </nav>
+    </div>
+		<p>
+		<div class="head">
+			Simulating various electrification pathways to optimize emissions 
+		</div>
+	</div>
+</div>
+
+<div class="bigspacer"></div>
+
+<div class="row">
+	<div class="col-lg-3">
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Source code
+		</div>
+		<div class="pad-left note">
+			<div class="smallspacer"></div>
+			<i class="fa fa-cog fa-fw"></i>
+			<a class="off" href="https://github.com/narslab/transit-electrification-futures">github.com/narslab/<wbr>transit-electrification-futures</a>
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Contributors
+		</div>
+		<div class="pad-left note">
+			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/maharabi">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/87103328?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				maharabi
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+			<div class="smallspacer"></div>
+			<div>
+				<a class="off" href="https://github.com/jimioke">
+    			<img class="pull-left avatar" src="https://avatars.githubusercontent.com/u/6685350?v=4&s=50">
+    			<div class="handlebox" style="padding-left:5px;"">
+    				jimioke
+    			</div>
+ 				</a>
+ 			</div>
+ 			
+		</div>
+		<div class="bigspacer"></div>
+		<div class="smallhead">
+			Latest commits
+		</div>
+		<div class="pad-left smallnote">
+			<ul class="list-unstyled">
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/narslab/transit-electrification-futures/commit/03076e9a8d65d573b27959530ec034378a22dc7b">
+					31 Jul 2025 - <span class="text-gray">Expand the emissions model to account for lifecycle emissions</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/narslab/transit-electrification-futures/commit/cabdd4de1bc4ec784b6a99032cd721dd52fcd442">
+					08 Apr 2025 - <span class="text-gray">Simulation to 2040</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/narslab/transit-electrification-futures/commit/dbb25cf15d33f4f2c8b5cf4962f646c508ccad7e">
+					08 Apr 2025 - <span class="text-gray">Continue simulation to year 2040</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/narslab/transit-electrification-futures/commit/1e1b5a3bdc634b366f252158f3d9c3bf7377b3dc">
+					12 Feb 2025 - <span class="text-gray">Merge branch &#39;main&#39; of https://github.com/narslab/transit-electrification-futures</span>
+					</a>
+				</li>
+			
+				<div class="smallspacer"></div>
+				<li>
+					<i class="fa fa-check-square-o fa-fw"></i>
+					<a class="off" href="https://github.com/narslab/transit-electrification-futures/commit/13b83cab3326d6259f02a7726783e4b78a94bb73">
+					12 Feb 2025 - <span class="text-gray">Sensitivity analysis on -20% charging capacity</span>
+					</a>
+				</li>
+			
+			</ul>
+		</div>
+		<div class="spacer"></div>
+
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+			<!-- 3 -->
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+			
+		
+
+		
+    
+		
+
+	</div>
+	<div class="col-lg-8">
+		<div class="post">
+			<p>
+			<h1 id="transit-electrification-future">Transit Electrification Future</h1>
+<p>This repository contains the code and data used in the research on transitioning conventional diesel bus fleets to zero-emission powertrains, focusing on battery electric buses (BEBs) and hybrid electric buses (HEBs). The study uses data from the Pioneer Valley Transit Authority (PVTA) and analyzes 10 fleet electrification futures under various fleet purchase strategies and multiple investment scenarios, with the goal of minimizing diesel consumption and emissions.</p>
+
+<h2 id="overview">Overview</h2>
+<p>In this reasearch we focuse on developing an optimization and energy modeling framework to analyze the transition from conventional diesel bus fleets to zero-emission powertrains. The following steps were undertaken to complete the research:</p>
+
+<ol>
+  <li><strong>Data collection</strong>:
+    <ul>
+      <li>Collected bus movement and refueling data from the Pioneer Valley Transit Authority (PVTA) covering October 2021 to September 2022.</li>
+      <li>Obtained bus fleet characteristics, including age, powertrain type, and mileage.</li>
+    </ul>
+  </li>
+  <li><strong>Energy modeling</strong>:
+    <ul>
+      <li>Computed bus trajectories including distance, speed, and acceleration</li>
+      <li>Developed a system-wide energy model calibrated to PVTA bus data to predict fuel consumption and energy usage for each powertrain type (CDB, HEB, BEB).</li>
+    </ul>
+  </li>
+  <li><strong>Optimization framework</strong>:
+    <ul>
+      <li>Built an optimization model using Gurobi to assign powertrains to bus trips, aiming to minimize diesel consumption while considering investment and infrastructure constraints.</li>
+    </ul>
+  </li>
+  <li><strong>Future evaluation</strong>:
+    <ul>
+      <li>Evaluated ten electrification futures considering fleet purchase strategies across different investment scenarios, analyzing diesel consumption, emissions, and costs.</li>
+    </ul>
+  </li>
+  <li><strong>Results and visualization</strong>:
+    <ul>
+      <li>Generated comprehensive analysis and visualizations for fleet composition, diesel consumption, emissions, and other key metrics for each future scenario.</li>
+    </ul>
+  </li>
+</ol>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/38affa12-0477-4275-b80d-fa430a91e32f" alt="Diesel Consumption" width="400" />
+  <img src="https://github.com/user-attachments/assets/71f133b7-a909-4479-8fb7-6c42ba853a51" alt="GHG Emissions" width="400" />
+</p>
+
+<p><em>Yearly diesel consumption and cumulative greenhouse gas emissions (ktCO₂e) over the 13-year planning horizon for the optimized futures. The percent reduction in emissions (or diesel consumption) relative to the <strong>Status Quo</strong> is shown in parentheses.</em></p>
+
+<h2 id="repository-structure">Repository Structure</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Directory</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bin/python/</code></td>
+      <td>Python scripts for data cleaning and implementing energy model and optimization framework.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">bin/jupyter/</code></td>
+      <td>Jupyter notebooks for analyzing model results and visualization.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">data/</code></td>
+      <td>Contains raw and cleaned data, including APC, and refueling tickets data.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">figures/</code></td>
+      <td>Visualizations and plots generated from the analysis, such as heatmaps and scatterplots.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">results/</code></td>
+      <td>Output matrices, model validation results, and analysis outcomes.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="usage">Usage</h2>
+
+<ol>
+  <li>
+    <p><strong>Energy Modeling:</strong><br />
+Use the energy models provided to estimate fuel consumption and energy usage for each powertrain type:</p>
+
+    <p>```bash
+python energy-model.py</p>
+  </li>
+  <li>
+    <p><strong>Optimization:</strong>  Run the optimization framework to assign powertrains to bus trips and minimize diesel consumption:</p>
+  </li>
+</ol>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>python powertrain-allocation.py
+</code></pre></div></div>
+
+<h2 id="data-sources">Data Sources</h2>
+<ul>
+  <li>Automatic Passenger Counter (APC) Data: Used to compute bus trajectories and energy consumption.</li>
+  <li>Refueling data: Provides timestamps and quantities of fuel refueled by buses.</li>
+  <li>PVTA fleet data: Includes vehicle types, age, and powertrain information.</li>
+</ul>
+
+<h2 id="key-results">Key Results</h2>
+<p>The study found that a mix of BEBs and HEBs can achieve an 87% electrification of the bus fleet by 2035, reducing diesel consumption by up to 45%. The results vary across different investment scenarios, with the most aggressive electrification strategies requiring substantial upgrades to charging infrastructure.</p>
+
+<h2 id="acknowledgments">Acknowledgments</h2>
+<p>This research was conducted as part of the Helping Obtain Prosperity for Everyone (HOPE) Program, funded by the Federal Transit Administration (FTA). We thank the Pioneer Valley Transit Authority (PVTA) for providing operational data and valuable insights.</p>
+
+		</div>
+	</div>
+	<div class="col-lg-1"></div>
+</div>
+
+	</div>
+
+	<div id="footer"><span style="display:none">foo</span></div>
+
+</body>
+</html>

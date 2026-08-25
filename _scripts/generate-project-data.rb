@@ -41,6 +41,14 @@ module Projects
 
 				puts "\t#{repo}"
 
+				# a repo whose README could not be downloaded has no page to link to,
+				# so listing it would only produce a card pointing at a 404
+				name = repo.split('/').drop(1).join('')
+				unless File.exist?("projects/#{name}/index.md")
+					puts "\t\tNo page generated, skipping"
+					next
+				end
+
 				# load repo metadata
 				octokit_repo = client.repository(repo)
 				project_title = octokit_repo.name

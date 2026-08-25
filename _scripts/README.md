@@ -1,3 +1,37 @@
+# Projects workflow
+
+Every card on `/projects/` and every page under `/projects/<name>/` is generated
+from a GitHub repo listed in `_config.yml`, by three scripts run in order:
+
+```sh
+GITHUB_TOKEN=$(gh auth token) bundle exec ruby _scripts/update-and-preprocess.rb
+bundle exec jekyll build
+```
+
+That wrapper runs `generate-readmes.rb` (downloads each repo's `README.md` into
+`projects/<name>/`), `preprocess-markdown.rb` (renames it to `index.md` and adds
+the front matter the `project` layout needs), and `generate-project-data.rb`
+(writes `_data/projects.yml`: description, contributors, last five commits).
+The token is only needed by the last one, which uses the GitHub API.
+
+**Commit what it generates.** `_data/projects.yml` and `projects/*/index.md` are
+build inputs, not build output. The site is built by GitHub Actions from a plain
+checkout, which never runs these scripts, so anything left uncommitted simply
+does not exist at build time -- a project with no committed `index.md` renders
+no page, and with no `_data/projects.yml` the projects page renders no cards at
+all. `.gitignore` keeps everything *else* under `projects/` out.
+
+## Adding a project
+
+Add the repo to `readmes:` in `_config.yml`, then re-run the commands above. The
+repo must be public and have a `README.md` on `main`; one that doesn't is
+skipped with a message and gets no card, rather than a card linking to a 404.
+
+`projects:` is the other list -- repos cloned in full so that pages besides the
+README can be published. It is empty on purpose. A working copy runs to hundreds
+of MB, must not be committed, and cannot be recreated by the CI build, so use
+`readmes:` unless a project genuinely needs to publish more than its README.
+
 # Papers workflow
 
 The papers section is generated from the **Publications** collection in Jimi's

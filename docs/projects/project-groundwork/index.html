@@ -183,40 +183,40 @@
 				<div class="smallspacer"></div>
 				<li>
 					<i class="fa fa-check-square-o fa-fw"></i>
-					<a class="off" href="https://github.com/narslab/project-groundwork/commit/565415a3e4f5039df9e32ebee650b539a5a3b007">
-					17 Jul 2024 - <span class="text-gray">initial values</span>
+					<a class="off" href="https://github.com/narslab/project-groundwork/commit/bbdd214e6e92131348fd05f9e815d84368725cc8">
+					25 Aug 2025 - <span class="text-gray">Update README.md</span>
 					</a>
 				</li>
 			
 				<div class="smallspacer"></div>
 				<li>
 					<i class="fa fa-check-square-o fa-fw"></i>
-					<a class="off" href="https://github.com/narslab/project-groundwork/commit/e86995d507c71480334f805dbc47b267167d668d">
-					17 Jul 2024 - <span class="text-gray">sensitivity results for lambda=0.8 and r=0.10</span>
+					<a class="off" href="https://github.com/narslab/project-groundwork/commit/ac369d8a643050863f03c61d67c372b374a4f90b">
+					25 Aug 2025 - <span class="text-gray">Update README.md</span>
 					</a>
 				</li>
 			
 				<div class="smallspacer"></div>
 				<li>
 					<i class="fa fa-check-square-o fa-fw"></i>
-					<a class="off" href="https://github.com/narslab/project-groundwork/commit/fc3ff84dd8b359d88770065733a9cfc3add3ef67">
-					16 Jul 2024 - <span class="text-gray">sensitivity with lamba=0.8 (alpha=0.2) and discount_rate=0.1</span>
+					<a class="off" href="https://github.com/narslab/project-groundwork/commit/bedd5785de3c9dab13648ae611dc0c9b3467701c">
+					25 Aug 2025 - <span class="text-gray">Update README.md</span>
 					</a>
 				</li>
 			
 				<div class="smallspacer"></div>
 				<li>
 					<i class="fa fa-check-square-o fa-fw"></i>
-					<a class="off" href="https://github.com/narslab/project-groundwork/commit/a4fe486a8889ec9d5816bd642b3e9233897609e8">
-					16 Jul 2024 - <span class="text-gray">sensitivity results for lambda=0.4 and r=0.03</span>
+					<a class="off" href="https://github.com/narslab/project-groundwork/commit/870966f32744c570873b449598b291ef7570c6ec">
+					06 Feb 2025 - <span class="text-gray">Update README.md</span>
 					</a>
 				</li>
 			
 				<div class="smallspacer"></div>
 				<li>
 					<i class="fa fa-check-square-o fa-fw"></i>
-					<a class="off" href="https://github.com/narslab/project-groundwork/commit/447343e279f04f04cc9dbcd60a8a7dbba253b7e9">
-					16 Jul 2024 - <span class="text-gray">sensitivity with lamba=0.4 (alpha=0.6) and discount_rate=0.03</span>
+					<a class="off" href="https://github.com/narslab/project-groundwork/commit/29d88d376602b9789bfd430de0ed915d84f05d02">
+					20 Oct 2024 - <span class="text-gray">Account for the inflation rate of 1% in conversion costs</span>
 					</a>
 				</li>
 			
@@ -258,7 +258,11 @@
 			
 		
 			
-			<!-- 4 -->
+		
+			
+			<!-- 5 -->
+			
+		
 			
 		
 			
@@ -278,8 +282,55 @@
 	<div class="col-lg-8">
 		<div class="post">
 			<p>
-			<h1 id="project-groundwork">project-groundwork</h1>
-<p>Cost-benefit model for electric-broadband utility co-deployment decision support</p>
+			<h1 id="project-groundwork-cost-benefit-analysis-of-undergrounding-utility-lines"><strong>Project Groundwork: Cost-Benefit Analysis of Undergrounding Utility Lines</strong></h1>
+
+<p>This repository contains the data and code used in the research article <a href="https://www.cell.com/action/showPdf?pii=S2949-7906%2825%2900030-8">Benefits of aggressively co-undergrounding electric and broadband lines outweigh costs</a> (<em>Cell Reports Sustainability</em>, 2025). The study introduces a novel data-driven cost-benefit framework and evaluates undergrounding strategies through a detailed case study in Shrewsbury, Massachusetts. The findings indicate that aggressively co-undergrounding electricity and broadband networks provides the highest net benefit when undergrounding is justified.</p>
+
+<h2 id="overview"><strong>Overview</strong></h2>
+<p>This research investigates the economic feasibility and policy implications of undergrounding electricity and broadband networks. The key objectives are:</p>
+<ul>
+  <li>Developing a <strong>segment-specific cost model</strong> incorporating local factors such as soil type, density, and infrastructure conditions.</li>
+  <li>Simulating <strong>nine undergrounding strategies</strong> varying in <strong>co-undergrounding policy (independent vs. co-undergrounding)</strong> and <strong>aggressiveness (moderate vs. aggressive conversion).</strong></li>
+  <li>Evaluating <strong>cost-benefit trade-offs</strong> across multiple scenarios using sensitivity analyses.</li>
+  <li>Providing <strong>actionable insights</strong> for utility planners and policymakers in assessing infrastructure resilience.</li>
+</ul>
+
+<h3 id="key-findings"><strong>Key Findings</strong></h3>
+<ul>
+  <li><strong>Aggressive co-undergrounding (CAA strategy) yields the highest net benefit</strong> in scenarios where undergrounding is justified.</li>
+  <li><strong>Independent undergrounding strategies are less cost-effective</strong>, as co-undergrounding reduces trenching costs.</li>
+  <li><strong>The discount rate and undergrounding effectiveness (λ) are critical parameters</strong> affecting the viability of undergrounding.</li>
+  <li><strong>Segment-specific cost models provide more precise cost estimates</strong> than traditional averaging methods.</li>
+  <li><strong>Policy support is essential</strong> as the costs are typically borne by municipalities while the benefits are widely distributed.</li>
+</ul>
+
+<h2 id="methodology"><strong>Methodology</strong></h2>
+<p>The research follows a <strong>data-driven approach</strong> integrating multiple data sources, including:</p>
+<ul>
+  <li><strong>Geospatial network data</strong> from Shrewsbury Electric and Cable Operations (SELCO).</li>
+  <li><strong>Historical undergrounding cost data</strong> from Concord, MA.</li>
+  <li><strong>Outage statistics</strong> and economic loss models to evaluate reliability improvements.</li>
+</ul>
+
+<p>The methodology involves:</p>
+<ol>
+  <li><strong>Cost Modeling:</strong> Life-cycle infrastructure, environmental, and safety cost estimation using regression models.</li>
+  <li><strong>Benefit Modeling:</strong> Avoided economic loss, property value increase, and enhanced service reliability assessment.</li>
+  <li><strong>Simulation of Strategies:</strong> Evaluating nine undergrounding strategies over a 40-year period.</li>
+  <li><strong>Sensitivity Analysis:</strong> Assessing the robustness of undergrounding effectiveness, discount rates, and conversion costs.</li>
+</ol>
+
+<h2 id="repository-structure"><strong>Repository Structure</strong></h2>
+<p>| Directory       | Description                                                                               |
+| ————— | —————————————————————————————– |
+| <code class="language-plaintext highlighter-rouge">bin/python/</code>   | Python scripts for cost modeling, benefit analysis, and optimization.
+| <code class="language-plaintext highlighter-rouge">bin/jupyter/</code>  | Jupyter notebooks for analyzing model results and visualization.                          |
+| <code class="language-plaintext highlighter-rouge">data/</code>         | Contains raw and processed data including geospatial, outage, and property value datasets.                 |
+| <code class="language-plaintext highlighter-rouge">figures/</code>      | Visualizations and plots generated from the analysis, such as heatmaps and scatterplots.  |
+| <code class="language-plaintext highlighter-rouge">results/</code>      | Output matrices, model validation results, and analysis outcomes.                         |</p>
+
+<h2 id="contact"><strong>Contact</strong></h2>
+<p>For inquiries and collaborations, contact Mahsa Arabi at marabi@umass.edu.</p>
 
 		</div>
 	</div>
