@@ -15,62 +15,36 @@
       <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
       <!-- Custom styles for this template -->
       <link href="css/clean-blog.min.css" rel="stylesheet">
-  
-  
-      <style>
-    #mainNav { position: fixed !important; top: 0 !important; background-color: rgba(255,255,255,0.97) !important; }
-    #mainNav .navbar-brand, #mainNav .navbar-nav > li.nav-item > a { color: #333 !important; }
-    #mainNav .navbar-brand:hover, #mainNav .navbar-nav > li.nav-item > a:hover { color: #0085a1 !important; }
-  </style></head>
-    <body>
+
+        <link href="css/dashboard.css" rel="stylesheet">
+    <script src="js/dashboard.js" defer></script>
+  </head>
+    <body class="photo-header">
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-          <a class="navbar-brand" href="/urban-typology-dashboard/index.html">Urban Typologies
-          </a>
-          <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-            Menu
-            <i class="fa fa-bars">
-            </i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link" href="/urban-typology-dashboard/factors.html">Factors
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/urban-typology-dashboard/map.html">Map
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/urban-typology-dashboard/profiles.html">Profiles
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/urban-typology-dashboard/explore.html">Explore
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/urban-typology-dashboard/resources.html">Resources
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/urban-typology-dashboard/team.html">Team
-                </a>
-              </li>
-            </ul>
-          </div>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" aria-current="page">Urban Typologies</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <span aria-hidden="true">&#9776;</span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="factors.html">Factors</a></li>
+          <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+          <li class="nav-item"><a class="nav-link" href="profiles.html">Profiles</a></li>
+          <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </nav>
       <!-- Page Header -->
-      <div class="bcont">
+      <div class="bcont" data-nav-theme="light">
         <header class="masthead">
           <div class="container">
             <div class="row">
               <div class="col-lg-12 col-md-10 mx-auto">
                 <div class="site-heading">
-                  <h1>Data-driven discovery</br> for sustainable mobility
+                  <h1>Data-driven discovery<br> for sustainable mobility
                   </h1>
                   <span class="subheading">city classification based on travel behavior, socioeconomics, demographics, and network characteristics
                   </span>
@@ -95,7 +69,7 @@
           </div>
         </div>
       </header>
-      <div class="bcont1">
+      <div class="bcont1" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -103,20 +77,21 @@
               <div class="site-heading">
                 <h1>Auto <i>Innovative</i>
                 </h1>
-                <span class="subheading"> Dense U.S./Canada agglomerations</br>
-                  • Top 5 cities: Washington DC, Atlanta, Boston, Seattle, Toronto</br>
-                  • Very high car dependency</br>
-                  • Highly populated and industrialized</br>
-                  • Moderate public transportation 
+                <span class="subheading"> Dense U.S./Canada agglomerations<br>
+                  • Top 5 cities: Washington DC, Atlanta, Boston, Seattle, Toronto<br>
+                  • Very high car dependency<br>
+                  • Highly populated and industrialized<br>
+                  • Moderate public transportation
                 </span>
+                <small class="photo-credit">Washington, DC &middot; Photo: <a href="https://commons.wikimedia.org/wiki/File:Washington_DC_Aerial.JPG">Fletcher6</a> &middot; <a href="https://creativecommons.org/licenses/by-sa/3.0/">CC BY-SA 3.0</a></small>
               </div>
             </div>
           </div>
         </div>
-  
+
       </header>
       </div>
-      <div class="bcont2">
+      <div class="bcont2" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -124,20 +99,20 @@
               <div class="site-heading">
                 <h1>Auto <i>Sprawl</i>
                 </h1>
-                <span class="subheading"> Sprawling U.S./Canada agglomerations </br>
-                  • Top 5 cities: Baltimore, Tampa-St. Petersburg, Raleigh, Cincinnati, Indianapolis</br>
-                  • Extremely high car dependency</br>
-                  • Relatively industrialized but lower population density</br>
+                <span class="subheading"> Sprawling U.S./Canada agglomerations <br>
+                  • Top 5 cities: Baltimore, Tampa-St. Petersburg, Raleigh, Cincinnati, Indianapolis<br>
+                  • Extremely high car dependency<br>
+                  • Relatively industrialized but lower population density<br>
                   • Sparse public transportation
                 </span>
               </div>
             </div>
           </div>
         </div>
-  
+
       </header>
       </div>
-      <div class="bcont3">
+      <div class="bcont3" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -145,10 +120,10 @@
               <div class="site-heading">
                 <h1>BusTransit <i>Dense</i>
                 </h1>
-                <span class="subheading"> Bus rapid transit-dominant cities in Latin America </br>
-                  • Top 5 cities:Rio de Janeiro, Bogota, Leon, Recife, Sao Paulo</br>
-                  • Greatest bus rapid transit propensity</br>
-                  • Densely networked and populated</br>
+                <span class="subheading"> Bus rapid transit-dominant cities in Latin America <br>
+                  • Top 5 cities:Rio de Janeiro, Bogota, Leon, Recife, Sao Paulo<br>
+                  • Greatest bus rapid transit propensity<br>
+                  • Densely networked and populated<br>
                   • Fairly congested
                 </span>
               </div>
@@ -157,7 +132,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont4">
+    <div class="bcont4" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -165,10 +140,10 @@
               <div class="site-heading">
                 <h1 >BusTransit <i>Sprawl</i>
                 </h1>
-                <span class="subheading"> Sprawling metropolitan areas in Latin America, Central Asia & Middle East</br>
-                  • Top 5 cities: Mecca, Shiraz, Mashdad, Santa Cruz, Medina</br>
-                  • Moderate public (bus) transportation</br>
-                  • Lower population than BusTransit <i>Dense</i></br>
+                <span class="subheading"> Sprawling metropolitan areas in Latin America, Central Asia & Middle East<br>
+                  • Top 5 cities: Mecca, Shiraz, Mashdad, Santa Cruz, Medina<br>
+                  • Moderate public (bus) transportation<br>
+                  • Lower population than BusTransit <i>Dense</i><br>
                 </span>
               </div>
             </div>
@@ -176,7 +151,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont5">
+    <div class="bcont5" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -184,10 +159,10 @@
               <div class="site-heading">
                 <h1>Congested <i>Boomer</i>
                 </h1>
-                <span class="subheading"> Rapidly growing megacities in Africa and Indian Subcontinent</br>
-                  • Top 5 cities: Bangalore, Lahore, Kishasa, Karachi, Chennai</br>                
-                  • Highest population growth and density</br>
-                  • Low development factor and fairly high congestion</br>
+                <span class="subheading"> Rapidly growing megacities in Africa and Indian Subcontinent<br>
+                  • Top 5 cities: Bangalore, Lahore, Kishasa, Karachi, Chennai<br>
+                  • Highest population growth and density<br>
+                  • Low development factor and fairly high congestion<br>
                 </span>
               </div>
             </div>
@@ -195,7 +170,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont6">
+    <div class="bcont6" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -203,10 +178,10 @@
               <div class="site-heading">
                 <h1>Congested <i>Emerging</i>
                 </h1>
-                <span class="subheading"> Moderately populated developing urban areas in Africa and South Asia</br>
-                  • Top 5 cities: Kumasi, Phnom-Penh, Conakry, Bandung, N'Djamena</br>
-                  • High population growth</br>
-                  • Lowest emissions per capita</br>
+                <span class="subheading"> Moderately populated developing urban areas in Africa and South Asia<br>
+                  • Top 5 cities: Kumasi, Phnom-Penh, Conakry, Bandung, N'Djamena<br>
+                  • High population growth<br>
+                  • Lowest emissions per capita<br>
                   • Highest public transportation mode share
                 </span>
               </div>
@@ -215,7 +190,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont7">
+    <div class="bcont7" data-nav-theme="light">
       <header class="masthead" >
         <div class="container">
           <div class="row">
@@ -224,8 +199,8 @@
                 <h1>Hybrid <i>Giant</i>
                 </h1>
                 <span class="subheading"> Dense cities in Eastern Europe and East Asia with balanced mode share mix
-                  • Top 5 cities: Sendai, Warsaw, Sofia, Hiroshima, Sapporo</br>
-                  • High population density</br>
+                  • Top 5 cities: Sendai, Warsaw, Sofia, Hiroshima, Sapporo<br>
+                  • High population density<br>
                   • Very high public transportation mode share
                 </span>
               </div>
@@ -234,7 +209,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont8">
+    <div class="bcont8" data-nav-theme="light">
       <header class="masthead" >
         <div class="container">
           <div class="row">
@@ -242,9 +217,9 @@
               <div class="site-heading">
                 <h1>Hybrid <i>Moderate</i>
                 </h1>
-                <span class="subheading"> Largely South American cities with balanced mode share mix</br>
-                  • Top 5 cities: Cordoba, Havana, Izmir, Valparaiso, Panama City</br>
-                  • Lower population than Hybrid <i>Giant</i></br>
+                <span class="subheading"> Largely South American cities with balanced mode share mix<br>
+                  • Top 5 cities: Cordoba, Havana, Izmir, Valparaiso, Panama City<br>
+                  • Lower population than Hybrid <i>Giant</i><br>
                   • Very high public transportation mode share
               </div>
             </div>
@@ -252,7 +227,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont9">
+    <div class="bcont9" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -260,9 +235,9 @@
               <div class="site-heading">
                 <h1>MassTransit <i>Heavyweight</i>
                 </h1>
-                <span class="subheading"> Innovative urban centers chiefly in Europe and Southeast Asia</br>
-                  • Top 5 cities: Berlin, Madrid, Munich, Seoul, Singapore</br>
-                  • Highest metro propensity and development</br>
+                <span class="subheading"> Innovative urban centers chiefly in Europe and Southeast Asia<br>
+                  • Top 5 cities: Berlin, Madrid, Munich, Seoul, Singapore<br>
+                  • Highest metro propensity and development<br>
                   • Fairly high CO2 emissions  per capita
                 </span>
               </div>
@@ -271,7 +246,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont10">
+    <div class="bcont10" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -279,10 +254,10 @@
               <div class="site-heading">
                 <h1>MassTransit <i>Moderate</i>
                 </h1>
-                <span class="subheading"> Midsize cities largely in Western Europe and Israel</br>
-                  • Jerusalem, Newcastle, Tel-Aviv, Liverpool, Turin</br>
-                  • Equitable; high bikeshare and bus rapid transit propensity</br>
-                  • Lowest population  
+                <span class="subheading"> Midsize cities largely in Western Europe and Israel<br>
+                  • Jerusalem, Newcastle, Tel-Aviv, Liverpool, Turin<br>
+                  • Equitable; high bikeshare and bus rapid transit propensity<br>
+                  • Lowest population
                 </span>
               </div>
             </div>
@@ -290,7 +265,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont11">
+    <div class="bcont11" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -298,10 +273,10 @@
               <div class="site-heading">
                 <h1>MetroBike <i>Emerging</i>
                 </h1>
-                <span class="subheading"> Rapidly urbanizing metropolitan areas in China</br>
-                  • Top 5 cities: Shenyang, Harbin, Changshaw, Zhengzhou, Qingdao </br>
-                  • Highest sustainability score</br>
-                  • Significant cycling and bikeshare  
+                <span class="subheading"> Rapidly urbanizing metropolitan areas in China<br>
+                  • Top 5 cities: Shenyang, Harbin, Changshaw, Zhengzhou, Qingdao <br>
+                  • Highest sustainability score<br>
+                  • Significant cycling and bikeshare
                 </span>
               </div>
             </div>
@@ -309,7 +284,7 @@
         </div>
       </header>
     </div>
-    <div class="bcont12">
+    <div class="bcont12" data-nav-theme="light">
       <header class="masthead">
         <div class="container">
           <div class="row">
@@ -317,9 +292,9 @@
               <div class="site-heading">
                 <h1>MetroBike <i>Giant</i>
                 </h1>
-                <span class="subheading"> Top-tier megacities in China</br>
-                  • Top 5 cities: Shenzhen, Guangzhou, Shanghai, Chongqing, Beijing</br>
-                  • Highest population</br>
+                <span class="subheading"> Top-tier megacities in China<br>
+                  • Top 5 cities: Shenzhen, Guangzhou, Shanghai, Chongqing, Beijing<br>
+                  • Highest population<br>
                   • Significant sprawl and congestion
                 </span>
               </div>
@@ -327,14 +302,13 @@
           </div>
         </div>
       </header>
-    </div>  
+    </div>
          <header class="masthead">
         <div class="container">
           <div class="row">
             <div class="col-lg-12 col-md-10 mx-auto">
               <div class="site-heading">
-                <a href="/urban-typology-dashboard/map.html"><h2> Explore our interactive typology map
-                </a><a href="/urban-typology-dashboard/factors.html">or learn about the factors used in our analysis</a></h2> 
+                <h2><a href="map.html">Explore our interactive typology map</a><br><a href="factors.html">or learn about the factors used in our analysis</a></h2>
                 <span class="subheading">
                 </span>
               </div>
@@ -342,16 +316,6 @@
           </div>
         </div>
       </header>
-  
-      <!-- Bootstrap core JavaScript -->
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js">
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js">
-      </script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js">
-      </script>
-      <!-- Custom scripts for this template -->
-      <script src="js/clean-blog.min.js">
-      </script>
+
     </body>
   </html>

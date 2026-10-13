@@ -16,69 +16,32 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
     <!-- Custom styles for this template -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
-    <!-- begin animation-->
-  <!-- Navbar always-visible fix -->
-  <style>
-    #mainNav {
-      position: fixed !important;
-      top: 0 !important;
-      background-color: rgba(255,255,255,0.97) !important;
-    }
-    #mainNav .navbar-brand,
-    #mainNav .navbar-nav > li.nav-item > a {
-      color: #333 !important;
-    }
-    #mainNav .navbar-brand:hover, #mainNav .navbar-brand:focus,
-    #mainNav .navbar-nav > li.nav-item > a:hover,
-    #mainNav .navbar-nav > li.nav-item > a:focus {
-      color: #0085a1 !important;
-    }
-  </style></head>
 
-<body>
+    <link href="css/dashboard.css" rel="stylesheet">
+    <script src="js/dashboard.js" defer></script>
+  </head>
+
+<body class="photo-header">
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="/urban-typology-dashboard/index.html">Urban Typologies
-        </a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                Menu
-                <i class="fa fa-bars">
-          </i>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/urban-typology-dashboard/factors.html">Factors
-              </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/urban-typology-dashboard/map.html">Map
-              </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/urban-typology-dashboard/profiles.html">Profiles
-              </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/urban-typology-dashboard/explore.html">Explore
-              </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/urban-typology-dashboard/resources.html">Resources
-              </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/urban-typology-dashboard/team.html">Team
-              </a>
-                    </li>
-                </ul>
-            </div>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Urban Typologies</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu <span aria-hidden="true">&#9776;</span></button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link" href="factors.html">Factors</a></li>
+          <li class="nav-item"><a class="nav-link" href="map.html">Map</a></li>
+          <li class="nav-item"><a class="nav-link" href="profiles.html" aria-current="page">Profiles</a></li>
+          <li class="nav-item"><a class="nav-link" href="explore.html">Explore</a></li>
+          <li class="nav-item"><a class="nav-link" href="resources.html">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="team.html">Team</a></li>
+          </ul>
         </div>
+      </div>
     </nav>
     <!-- Page Header -->
     <!-- Main Content -->
-    <div class="bcontp">
+    <div class="bcontp" data-nav-theme="light">
         <header class="masthead">
             <div class="container">
                 <div class="row">
@@ -165,14 +128,14 @@
           </div>
           <div class="col-lg-6 col-md-6" style="padding-left: 0px;  padding-right: 0px;">
             <center><img src="img/metrobike_giant.png" class="img-fluid"></center>
-          </div>           
+          </div>
          <div class="col-lg-12 col-md-12">
             <hr style="   border-top: 1px solid #8c8b8b;">
           </div>
          </div>
       </div>
     </header>
- 
+
 <!--    <div>
         <header class="masthead">
             <div class="container">
@@ -198,10 +161,8 @@
         scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
         vizElement.parentNode.insertBefore(scriptElement, vizElement);
     </script>-->
-    
-    <!-- Footer -->
 
-    <!-- Bootstrap core JavaScript -->
+    <!-- Footer -->
 
 </body>
 

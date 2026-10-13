@@ -1,0 +1,196 @@
+/* Shared layout overrides for the original Clean Blog dashboard. */
+:root {
+  --nav-height: 72px;
+  --ink: #212529;
+  --accent: #00697f;
+}
+
+body {
+  padding-top: var(--nav-height);
+  color: var(--ink);
+}
+
+#mainNav,
+#mainNav.is-fixed,
+#mainNav.is-visible {
+  position: fixed;
+  inset: 0 0 auto;
+  min-height: var(--nav-height);
+  background: transparent;
+  border: 0;
+  transform: none;
+  transition: none;
+  z-index: 1030;
+}
+
+#mainNav .navbar-brand,
+#mainNav .navbar-nav > li.nav-item > a {
+  color: var(--nav-ink, var(--ink));
+  padding: 10px 12px;
+  transition: none;
+}
+
+#mainNav .navbar-brand {
+  padding-left: 0;
+}
+
+#mainNav .navbar-brand:hover,
+#mainNav .navbar-brand:focus,
+#mainNav .navbar-nav > li.nav-item > a:hover,
+#mainNav .navbar-nav > li.nav-item > a:focus,
+#mainNav .navbar-brand[aria-current="page"],
+#mainNav .navbar-nav > li.nav-item > a[aria-current="page"] {
+  color: var(--nav-accent, var(--accent));
+}
+
+#mainNav [aria-current="page"] { text-decoration: none; }
+
+#mainNav .nav-over-photo {
+  --nav-ink: #fff;
+  --nav-accent: #8edcf1;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 4px;
+}
+
+#mainNav .navbar-toggler {
+  color: var(--nav-ink, var(--ink));
+  border-color: currentColor;
+  background: transparent;
+  font-size: 13px;
+}
+
+.page-header {
+  padding: clamp(64px, 8vw, 120px) 0;
+  text-align: center;
+  color: var(--ink);
+}
+
+.page-header h1,
+header.masthead .site-heading h1 {
+  font-size: clamp(32px, 4.5vw, 64px);
+  line-height: 1.15;
+  margin: 0;
+}
+
+.page-header p {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-size: clamp(20px, 2.5vw, 28px);
+  font-weight: 700;
+  margin: 16px 0 0;
+}
+
+header.masthead {
+  margin: 0;
+  background: none;
+}
+
+header.masthead .site-heading {
+  padding: clamp(64px, 8vw, 120px) 0;
+  color: var(--ink);
+}
+
+header.masthead .site-heading .subheading {
+  font-size: clamp(18px, 2vw, 24px);
+  line-height: 1.5;
+}
+
+div[class^="bcont"] {
+  position: relative;
+  isolation: isolate;
+  width: auto;
+  height: auto;
+}
+
+/* Keep the existing photos and give white text a readable fallback. */
+.bcont, .bcont1, .bcont2, .bcont3, .bcont4, .bcont5, .bcont6, .bcont7,
+.bcont8, .bcont9, .bcont10, .bcont11, .bcont12, .bcontp, .bcontt {
+  background-color: #243640;
+}
+
+:is(.bcont, .bcont1, .bcont2, .bcont3, .bcont4, .bcont5, .bcont6, .bcont7,
+  .bcont8, .bcont9, .bcont10, .bcont11, .bcont12, .bcontp, .bcontt)
+  header.masthead .site-heading {
+  color: #fff;
+}
+
+div.bcont::before { background-image: url('../img/home-barcelona.jpg'); }
+div.bcont1::before { background-image: url('../img/auto-innovative-washington.jpg'); background-position: center; }
+div.bcont5::before { background-image: url('../img/congested-boomer.jpg'); }
+div.bcontp::before { background-image: url('../img/profiles-background.jpg'); }
+div.bcontt::before { background-image: url('../img/mit-campus.jpg'); }
+
+/* Photo headers extend behind the transparent navigation. */
+body.photo-header { padding-top: 0; }
+body.photo-header > [data-nav-theme="light"]:first-of-type .site-heading {
+  padding-top: calc(clamp(64px, 8vw, 120px) + var(--nav-height));
+}
+
+.bcontt + .team { padding-top: clamp(48px, 6vw, 80px); }
+
+.photo-credit {
+  display: block;
+  margin-top: 24px;
+  font: 12px/1.5 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.photo-credit a { color: inherit; text-decoration: underline; }
+
+.resource-section .site-heading {
+  padding: 24px 0 40px;
+}
+
+.visualization-section {
+  max-width: 1800px;
+  margin: 0 auto 48px;
+}
+
+.tableauPlaceholder {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.tableauPlaceholder iframe,
+.tableauPlaceholder object {
+  max-width: 100%;
+}
+
+#map {
+  width: 100%;
+  height: clamp(420px, 65vh, 800px);
+  background: #e8eef0;
+}
+
+.map-section { margin-bottom: 40px; }
+
+@media (max-width: 991.98px) {
+  #mainNav .navbar-collapse {
+    max-height: calc(100vh - var(--nav-height));
+    overflow-y: auto;
+  }
+
+  #mainNav .navbar-nav {
+    padding: 10px 0;
+  }
+
+  #mainNav .navbar-nav > li.nav-item > a {
+    padding: 12px 0;
+  }
+
+  #mainNav .navbar-collapse.show {
+    background: rgba(255, 255, 255, .97);
+    padding: 0 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, .15);
+  }
+
+  .leaflet-control.legend {
+    max-width: 180px;
+    max-height: 190px;
+    overflow-y: auto;
+    font-size: 10px !important;
+  }
+}
