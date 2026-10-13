@@ -147,6 +147,9 @@ body.photo-header > [data-nav-theme="light"]:first-of-type .site-heading {
   margin: 0 auto 48px;
 }
 
+/* The factor-loading chart needs the original full-width 4:3 layout. */
+.factors-visualization { max-width: none; }
+
 .tableauPlaceholder {
   position: relative;
   width: 100%;

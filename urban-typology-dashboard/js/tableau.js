@@ -3,8 +3,10 @@ document.querySelectorAll('.tableauPlaceholder').forEach(function (container) {
   var object = container.querySelector('object');
 
   function resize() {
-    var height = container.clientWidth < 600
-      ? container.dataset.mobileHeight : container.dataset.height;
+    var height = container.dataset.aspectRatio
+      ? container.clientWidth * Number(container.dataset.aspectRatio)
+      : (container.clientWidth < 600
+        ? container.dataset.mobileHeight : container.dataset.height);
     container.style.height = height + 'px';
     var viz = container.querySelector('iframe') || object;
     viz.style.width = '100%';
