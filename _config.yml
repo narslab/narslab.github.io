@@ -21,6 +21,10 @@ redcarpet:
    - superscript
    - strikethrough
 
+# Overrides the "*.csv" exclude below: the typology map loads this file.
+include:
+  - urban-typology-dashboard/data/final-city-typologies.csv
+
 exclude:
   - "*.branches"
   - "*.class"

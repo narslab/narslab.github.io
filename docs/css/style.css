@@ -330,6 +330,36 @@ img.paperfigure {
   min-height: 120px;
 }
 
+/* Dashboard cards: a screenshot that links straight to the live site. */
+.dashboardthumb {
+  display: block;
+  aspect-ratio: 16/10;
+  overflow: hidden;
+  border: 1px solid #e4e4e6;
+  transition: border-color 0.15s ease;
+}
+.dashboardthumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+.dashboardthumb:hover {
+  border-color: #DD2D2D;
+}
+
+/* Shown until a dashboard has a screenshot. */
+.dashboardthumb-blank {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 15px;
+  text-align: center;
+  color: #777;
+  background: #f8f8f8;
+}
+
 /* Past members keep their photo, desaturated so the current team still reads
    as the foreground of the page. */
 .alumni-photo img {
