@@ -14,7 +14,11 @@ categories:
   				</a>
  			 	<div class="media-body">
     				<div class="smallhead media-heading"><a href="{{ course.url }}" class="off">{{ course.title }}</a></div>
+            {% if course.sites %}
+            <p class="note">{% for web in course.sites %}<a href="{{ web.url }}">{{ web.term }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>
+            {% else %}
             <p class="note">{{ course.term }}</p>
+            {% endif %}
   				</div>
 			</div>
 			<div class="bigspacer"></div>
