@@ -4,8 +4,8 @@ title: "Robust Decision-Making Framework for Sustainable Operations and Planning
 image: /images/papers/2024-09-01-han-robust-decisionmaking-framework.jpg
 authors: Zhuo Han, Eleni Christofa, Eric Gonzales, Jimi Oke
 year: 2024
-ref: Han et al. 2024
-journal: "24-063."
+ref: Han et al. 2024. Massachusetts Department of Transportation
+journal: "Massachusetts Department of Transportation 24-063."
 volume:
 pdf:
 supplement:
