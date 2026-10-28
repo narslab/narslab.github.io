@@ -1,13 +1,13 @@
 ---
 layout: paper
 title: "A two-stage detection and segmentation framework for pedestrian crosswalk inventory and condition assessment from aerial imagery"
-image: /images/papers/2026-10-15-yan-twostage-detection-segmentation.png
+image: /images/papers/2026-10-15-yan-twostage-detection-segmentation.jpg
 authors: Xintong Yan, Zubin Bhuyan, Jimi Oke, Guanhe Wu, Yuanchang Xie
 year: 2026
 ref: Yan et al. 2026. Engineering Applications of Artificial Intelligence
 journal: "Engineering Applications of Artificial Intelligence 182:115851."
 volume: 182
-pdf:
+pdf: /pdfs/papers/2026-yan-twostage-detection-segmentation.pdf
 supplement:
 doi: 10.1016/j.engappai.2026.115851
 github:
